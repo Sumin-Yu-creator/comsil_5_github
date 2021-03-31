@@ -35,6 +35,6 @@ int main(){
 >>>>>>> test2
 
 int main() {
-	printf("Hi");
-	return 0;
+	printf("Hello");
+	
 }
