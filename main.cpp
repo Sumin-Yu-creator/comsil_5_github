@@ -1,4 +1,5 @@
 #include <stdio.h>
+<<<<<<< HEAD
 #include "Stack.h"
 void prnMenu(){
 	cout<<"*******************************************"<<endl;
@@ -30,44 +31,10 @@ int main(){
 			
 		else
 			p = new LinkedList<int>();
+=======
+>>>>>>> test2
 
-
-		do{
-			prnMenu();
-			cin>>selectNumber;
-			
-			switch(selectNumber){ 
-				case 1:
-					cout<<"원하시는 값을 입력해주세요: ";
-					cin>>tmpItem;    p->Insert(tmpItem);
-					cout<<tmpItem<<"가 삽입되었습니다."<<endl;
-					break;
-					
-				case 2:
-					if(p->Delete(tmpItem)==true)
-						cout<<tmpItem<<"가 삭제되었습니다."<<endl;
-						
-					else cout<<"비어있습니다. 삭제 실패"<<endl;
-					break;
-					
-				case 3:
-					cout<<"크기: "<<p->GetSize()<<endl;
-					p->Print();
-					break;
-					
-				case 4:
-					flag = true;     break;
-					
-				default:
-					cout<<"잘못 입력하셨습니다."<<endl;
-					break;
-			
-			}
-			
-			if(flag) break;
-			
-		} while(1);
-		
-		return 0;
+int main() {
+	printf("Hi");
+	return 0;
 }
-
